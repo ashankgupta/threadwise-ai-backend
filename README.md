@@ -10,14 +10,14 @@ This is the **backend service** for **Thread AI - Smart Email Reply Generator**.
 It acts as a unified **LLM router** to handle multiple AI providers (**OpenAI**, **Gemini**, and **Ollama**) and generate context-aware, high-quality email replies.
 
 
-## 🚀 Features
+## Features
 - **Multi-LLM Support** – OpenAI, Gemini, and Ollama in one place.
 - **Dynamic Provider Selection** – Switch AI providers via API.
 - **Prompt Engineering** – Centralized and optimized prompts for better responses.
 - **FastAPI Backend** – Lightweight and high-performance.
 - **Easy Deployment** – Works locally or on cloud.
 
-## 📂 Project Structure
+## Project Structure
 ```
 ├── llm_router.py # Routes requests to the correct LLM provider
 ├── main.py # FastAPI app entry point
@@ -29,11 +29,11 @@ It acts as a unified **LLM router** to handle multiple AI providers (**OpenAI**,
 ├── requirements.txt # Python dependencies
 ```
 
-## ⚙️ Installation
+## Installation
 
 ### 1 Clone the Repository
 ```
-git clone https://github.com/Ashank007/threadwise-ai-backend.git
+git clone https://github.com/ashankgupta/threadwise-ai-backend.git
 cd thread-ai-backend
 ```
 ### 2 Create Virtual Environment
@@ -47,7 +47,7 @@ venv\Scripts\activate      # For Windows
 pip install -r requirements.txt
 ```
 
-## ▶️ Running the Server
+## Running the Server
 ```
 uvicorn main:app --reload
 ```
@@ -56,14 +56,13 @@ Server will start at:
 http://127.0.0.1:8000
 ```
 
-## 📡 API Endpoints
+## API Endpoints
 ```
 Method	Endpoint	Description
 POST	/generate	Generate an AI email reply
 GET	    /providers	List available AI providers
 POST	/switch	    Switch active AI provider
 ```
-
-## 📝 License
+## License
 
 This project is licensed under the MIT License.
